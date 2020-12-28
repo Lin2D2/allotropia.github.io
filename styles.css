@@ -1,1 +1,85 @@
-.nc-theming-main-background{background-color:#4e8267}.nc-theming-main-text{color:#fff}.nc-theming-contrast{color:#fff}#appmenu:not(.inverted) svg{filter:none}#appmenu.inverted svg{filter:invert(1)}.icon-file,.icon-filetype-text{background-image:url(./text.svg)}.icon-folder,.icon-filetype-folder{background-image:url(./folder.svg)}.icon-filetype-folder-drag-accept{background-image:url(./folder-drag-accept.svg) !important}#theming-preview-logo,#header .logo{background-image:url('./background.jpg')}#body-user #header,#body-settings #header,#body-public #header{background-color:#4e8267;background-image:none}#body-login,#firstrunwizard .firstrunwizard-header,#theming-preview{background-color:#4e8267;background-image:none;background-size:contain;background-size:cover;background-repeat:no-repeat;background-image:url('./background.jpg')}#theming-preview-logo,#header .logo{background-size:contain}#body-login #header .logo{margin-bottom:22px}#theming .advanced-option-logoheader .image-preview,body:not(#body-login) #header .logo{background-image:url('./logoheader.png')}#theming .advanced-option-favicon .image-preview{background-image:url('./favicon.png')}input.primary,#alternative-logins li a{background-color:#4e8267;border:1px solid #fff;color:#fff}footer{height:92px}
+.nc-theming-main-background {
+    background-color: #4e8267
+}
+
+.nc-theming-main-text {
+    color: #fff
+}
+
+.nc-theming-contrast {
+    color: #fff
+}
+
+#appmenu:not(.inverted) svg {
+    filter: none
+}
+
+#appmenu.inverted svg {
+    filter: invert(1)
+}
+
+.icon-file,
+.icon-filetype-text {
+    background-image: url(./text.svg)
+}
+
+.icon-folder,
+.icon-filetype-folder {
+    background-image: url(./folder.svg)
+}
+
+.icon-filetype-folder-drag-accept {
+    background-image: url(./folder-drag-accept.svg) !important
+}
+
+#theming-preview-logo,
+#header .logo {
+    background-image: url('./background.jpg')
+}
+
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+    background-color: #4e8267;
+    background-image: none
+}
+
+#body-login,
+#firstrunwizard .firstrunwizard-header,
+#theming-preview {
+    background-color: #4e8267;
+    background-image: none;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./background.jpg')
+}
+
+#theming-preview-logo,
+#header .logo {
+    background-size: contain
+}
+
+#body-login #header .logo {
+    margin-bottom: 22px
+}
+
+#theming .advanced-option-logoheader .image-preview,
+body:not(#body-login) #header .logo {
+    background-image: url('./logoheader.png')
+}
+
+#theming .advanced-option-favicon .image-preview {
+    background-image: url('./favicon.png')
+}
+
+input.primary,
+#alternative-logins li a {
+    background-color: #4e8267;
+    border: 1px solid #fff;
+    color: #fff
+}
+
+footer {
+    height: 92px
+}
