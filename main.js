@@ -25,10 +25,6 @@ function loadContent() {
     }
 }
 
-if (!location.hash) {
-    location.hash = "#home";
-}
-
 window.addEventListener("hashchange", loadContent)
 
-loadContent();
+$(document).ready(loadContent);
