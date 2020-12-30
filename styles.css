@@ -1,85 +1,98 @@
-.nc-theming-main-background {
-    background-color: #4e8267
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.nc-theming-main-text {
-    color: #fff
+p {
+    margin: 0;
+    padding: 0;
 }
 
-.nc-theming-contrast {
-    color: #fff
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
-#appmenu:not(.inverted) svg {
-    filter: none
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
-#appmenu.inverted svg {
-    filter: invert(1)
+header {
+    height: 200px;
+    background-color: var(--color-background-dark);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-file,
-.icon-filetype-text {
-    background-image: url(./text.svg)
+header #logo {
+    padding: 10px;
+    height: 180px;
 }
 
-.icon-folder,
-.icon-filetype-folder {
-    background-image: url(./folder.svg)
+@media only screen and (max-width: 800px) {
+    header {
+        height: auto;
+    }
+    header #logo {
+        height: auto;
+        padding: 10px;
+        width: 90%;
+    }
 }
 
-.icon-filetype-folder-drag-accept {
-    background-image: url(./folder-drag-accept.svg) !important
+.topNav {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-background-dark);
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
 }
 
-#theming-preview-logo,
-#header .logo {
-    background-image: url('./background.jpg')
+.topNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-#body-user #header,
-#body-settings #header,
-#body-public #header {
-    background-color: #4e8267;
-    background-image: none
+.topNav .right {
+    float: right;
 }
 
-#body-login,
-#firstrunwizard .firstrunwizard-header,
-#theming-preview {
-    background-color: #4e8267;
-    background-image: none;
-    background-size: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('./background.jpg')
+.topNav a:hover {
+    background-color: rgb(182, 182, 182);
+    color: black;
 }
 
-#theming-preview-logo,
-#header .logo {
-    background-size: contain
+.topNav a.active {
+    background-color: #3aaa35;
+    color: white;
 }
 
-#body-login #header .logo {
-    margin-bottom: 22px
+#background {
+    padding: 0;
+    margin: 0;
 }
 
-#theming .advanced-option-logoheader .image-preview,
-body:not(#body-login) #header .logo {
-    background-image: url('./logoheader.png')
-}
+main {}
 
-#theming .advanced-option-favicon .image-preview {
-    background-image: url('./favicon.png')
-}
-
-input.primary,
-#alternative-logins li a {
-    background-color: #4e8267;
-    border: 1px solid #fff;
-    color: #fff
-}
-
-footer {
-    height: 92px
+div#footer {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
