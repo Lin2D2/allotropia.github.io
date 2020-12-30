@@ -19,6 +19,9 @@ function loadContent() {
         case "impressum":
             $("#app").load("imprint" + ".html");
             break;
+        case "privacy":
+            $("#app").load("privacy" + ".html");
+            break;
     }
 }
 
