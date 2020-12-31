@@ -17,8 +17,6 @@
     <meta property="og:image" content="https://allotropia.de/favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
     <meta name="robots" content="noindex, nofollow" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -27,24 +25,51 @@
     </header>
     <div class="topNav">
         <a id="homeNav" class="active" href="#home">Home</a>
-        <a id="blogNav" href="#blog">Blog</a>
+        <!-- <a id="blogNav" href="#blog">Blog</a> -->
         <div class="right">
-            <a id="contactNav" href="#contact">Contact</a>
-            <a id="aboutNav" href="#about">About</a>
+            <!-- <a id="contactNav" href="#contact">Contact</a> -->
+            <a id="aboutNav" href="./imprint.html">About</a>
         </div>
     </div>
-    <div id="app"></div>
+    <div id="home">
+        <main>
+            <h1>allotropia software GmbH</h1>
+            <img id="Placeholder" src="background.jpg" alt="Placeholder Image">
+            <h2>Stay tuned! </h2>
+            <div id="Register">
+                <a class="button" href="/apps/registration/">Register</a>
+            </div>
+        </main>
+    </div>
+    <div id="app" style="visibility: hidden;"></div>
     <footer class="centerContent" role="contentinfo">
         <div id="footer">
             <p>
                 <!--TODO the link is leading to the same page-->
                 <a href="https://allotropia.de" target="_blank" rel="noreferrer noopener" class="entity-name">allotropia
                     software GmbH</a> – Here&#039;s where the fun is!<br />
-                <a href="#impressum" class="legal" rel="noreferrer noopener">Legal notice (Impressum)</a> ·
-                <a href="#privacy" class="legal" rel="noreferrer noopener">Privacy policy</a>
+                <a href="./imprint.html" class="legal" rel="noreferrer noopener">Legal notice (Impressum)</a> ·
+                <a href="./privacy.html" class="legal" rel="noreferrer noopener">Privacy policy</a>
             </p>
         </div>
     </footer>
 </body>
+<script>
+    window.addEventListener("hashchange", () => {
+        fragmentId = location.hash.substr(1);
+        switch (fragmentId) {
+            case "home":
+                document.getElementById("app").style.visibility = "hidden";
+                document.getElementById("home").style.visibility = "visible";
+                break;
+            default:
+                document.getElementById("home").style.visibility = "hidden";
+                appDiv = document.getElementById("app");
+                appDiv.style.visibility = "visible";
+                appDiv.innerHTML = fragmentId;
+                break;
+        }
+    })
+</script>
 
 </html>
